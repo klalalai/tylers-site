@@ -41,15 +41,15 @@ export default function Home() {
 
               <div className="mt-4 flex flex-wrap gap-2">
                 {[
-                  "Snowmobiles",
-                  "Mountain Bikes",
-                  "Dirt Bikes",
-                  "Snowbikes",
+                  "Snowmobile",
+                  "Mountain Bike",
+                  "Dirt Bike",
+                  "Snowbike",
                   "SxS",
                 ].map((item) => (
                   <span
                     key={item}
-                    className="rounded-full border border-sky-300/30 bg-sky-300/20 px-5 py-2 text-sm font-medium text-white/90 transition-all duration-200 hover:border-sky-400 hover:bg-sky-400/30 hover:-translate-y-0.5"
+                    className="rounded-full border border-sky-300/30 bg-sky-300/20 px-5 py-2 text-sm font-medium text-white/90"
                   >
                     {item}
                   </span>
@@ -87,6 +87,10 @@ export default function Home() {
                 <span className="inline-flex items-center gap-2">
                   <span className="text-white/70">✓</span>
                   <span>Install</span>
+                </span><span className="text-white/35">•</span>
+                <span className="inline-flex items-center gap-2">
+                  <span className="text-white/70">✓</span>
+                  <span>Vinyl Install</span>
                 </span>
               </div>
             </div>
@@ -99,7 +103,7 @@ export default function Home() {
                 Request a Quote
               </h2>
               <p className="mt-3 text-white/70">
-                Share a few details and Tyler will get back to you.
+                Share a few details and we will get back to you.
               </p>
 
               <div className="mt-8 rounded-2xl bg-black/20 p-5 shadow-[0_30px_90px_rgba(0,0,0,0.55)]">
@@ -151,7 +155,7 @@ export default function Home() {
                 We’ll Guide You
               </div>
               <p className="mt-3 text-sm text-white/70">
-                Tell Tyler what you ride and what you want it to look like.
+                Tell us what you ride and what you want it to look like.
               </p>
             </div>
           </div>
@@ -177,7 +181,7 @@ export default function Home() {
                   Request a quote
                 </div>
                 <p className="mt-2 text-sm text-white/70">
-                  Tell Tyler what you ride and what you want it to look like.
+                  Tell us what you ride and what you want it to look like.
                 </p>
               </div>
 

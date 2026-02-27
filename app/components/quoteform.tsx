@@ -40,7 +40,6 @@ export default function QuoteForm() {
       email.trim().length > 0 &&
       vehicleType !== "" &&
       services.length > 0 &&
-      description.trim().length > 0 &&
       description.length <= 400
     );
   }, [firstName, email, vehicleType, services, description]);
@@ -171,7 +170,6 @@ export default function QuoteForm() {
           onChange={(e) => setDescription(e.target.value.slice(0, 400))}
           maxLength={400}
           rows={5}
-          required
         />
         <div className="mt-1 text-right text-xs text-white/50">
           {Math.max(0, 400 - description.length)}/400
@@ -187,7 +185,7 @@ export default function QuoteForm() {
       </button>
 
       {status === "sent" && (
-        <p className="text-sm text-white/80">✅ Sent! Tyler will get back to you soon.</p>
+        <p className="text-sm text-white/80">✅ Sent! We will get back to you soon.</p>
       )}
       {status === "error" && (
         <p className="text-sm text-red-300">{errorMsg}</p>
